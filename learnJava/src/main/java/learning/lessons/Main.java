@@ -1,9 +1,12 @@
 package main.java.learning.lessons;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.val;
 import main.java.learning.lessons.test_list.ErrorList;
 import main.java.learning.lessons.test_list.ListExample;
 import main.java.learning.lessons.test_list.Error;
+import main.java.learning.lessons.threadlessons.ListNode;
+import main.java.learning.lessons.threadlessons.TestBook;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,7 +47,7 @@ public class Main {
         for (Error error : sortedErrors) {
             System.out.println(error);
         }
-
+        TestBook tb = new TestBook();
         return sortedErrors.get(0);
     }
 }
