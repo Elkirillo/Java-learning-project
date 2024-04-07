@@ -1,4 +1,4 @@
-package main.java.learning.lessons.threadlessons;
+package main.java.learning.lessons.leetcode;
 
 public class ListNode {
     int val;

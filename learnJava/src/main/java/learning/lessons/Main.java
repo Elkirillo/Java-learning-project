@@ -1,19 +1,13 @@
 package main.java.learning.lessons;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.val;
 import main.java.learning.lessons.test_list.ErrorList;
 import main.java.learning.lessons.test_list.ListExample;
 import main.java.learning.lessons.test_list.Error;
-import main.java.learning.lessons.threadlessons.ListNode;
-import main.java.learning.lessons.threadlessons.TestBook;
+import main.java.learning.lessons.leetcode.TestBook;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
