@@ -1,4 +1,4 @@
-package main.java.learning.lessons.threadlessons;
+package main.java.learning.lessons.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
