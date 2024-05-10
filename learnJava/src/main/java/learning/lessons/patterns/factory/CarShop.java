@@ -18,7 +18,8 @@ public class CarShop {
     public static void main (String[] args) {
         FactoryCars cars = new FactoryCars();
         CarShop carShop = new CarShop(cars);
-        carShop.orderCar(CarType.ELECTRIC);
-
+        Cars car = carShop.orderCar(CarType.ELECTRIC);
+        boolean cr = car instanceof ElectricCars;
+        System.out.println(cr);
     }
 }
