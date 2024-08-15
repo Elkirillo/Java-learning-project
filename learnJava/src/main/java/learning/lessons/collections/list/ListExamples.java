@@ -8,11 +8,12 @@ import java.util.*;
 
 public class ListExamples {
 
+
     public static String process(Object input) {
         return Arrays.toString(((String)input).split(" "));
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         List<Integer> list = new ArrayList<>();
         Collections.addAll(list, 1,2,3);
@@ -42,6 +43,29 @@ public class ListExamples {
         while(iterator.hasNext()) {
             System.out.println("iterator value = " + iterator.next());
         }
+
+        Object[][] fields = new Object[3][3];
+        for (int i = 0; i < 3; i++)
+            fields[i] = new Object[] {"123"+i, "456"+i};
+        for (Object[] std : fields) {
+            System.out.println(std.toString());
+        }
+        while (true) {
+            try {
+                throw new Exception();
+            } catch (Exception e) {
+                System.out.println("in cach block");
+                break;
+            }
+            finally {
+                System.out.println("in finaly block");
+            }
+        }
+
+        List<? super RuntimeException> list1 = new ArrayList<>();
+        list1.add(new NullPointerException());
+       // list1.add(new InterruptedException());
+        list1.add(new ArithmeticException());
 
     }
 

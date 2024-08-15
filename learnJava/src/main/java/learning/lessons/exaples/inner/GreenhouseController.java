@@ -1,6 +1,6 @@
 package main.java.learning.lessons.exaples.inner;
 
-public class GreenhouseController {
+public class  GreenhouseController {
     public static void main(String[] args) {
         GreenhouseControll gc = new GreenhouseControll();
         gc.addEvent(gc.new Bell(900));
